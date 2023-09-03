@@ -1,0 +1,954 @@
+body{
+    background-color: #f3f6f8;
+}
+
+header{
+    width: 100%;
+    height: 125px;
+    background-color: #fff;
+}
+
+.headerWrap{
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    width: 165px;
+    height: 34px;
+    background: url(../img/ebz_top_dgb_logo_up.png) no-repeat center/cover;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* .lgnb */
+
+
+.lgnb{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lgnb>li{
+    margin: 0 10px;
+   
+    margin-right: 27px;
+}
+
+.lgnb>li>a{
+    color: #07172a;
+    font:  bold 18px 'Noto Sans KR';
+}
+
+
+/* rgnb */
+.rgnb{
+    width: 324px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.rgnb>.srh{
+    width: 214px;
+    height: 44px;
+    
+}
+
+.rgnb>.srh>input{
+    position: relative;
+    padding: 0 45px 2px 20px;
+    width: 214px;
+    height: 44px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 44px;
+    border: solid 1px #000;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.rgnb>.srh>input:focus{
+    border-color: #006ddf;
+    outline: solid 1px #006ddf;
+    box-shadow: 0 0 8px rgba(0, 110, 222, 0.25);
+}
+
+.rgnb>ul>li>a>i{
+    font-size: 20px;
+    color: #07172a;
+}
+
+.rgnb>ul>li>a>i:first-child{
+    margin-left: -5px;
+}
+
+
+
+.globeList{
+    display: none;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 36px;
+    z-index: 2;
+    margin: 0 0 0 -40px;
+    padding: 10px 0;
+    width: 80px;
+    font-size: 12px;
+    border-radius: 8px;
+    border: solid 1px #000;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.globeList.active{
+    display: block;
+}
+
+.globeList::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -7px;
+    margin: 0 0 0 -6px;
+    width: 12px;
+    height: 9px;
+    background: url(../img/ebz_dgb_sprite2023.png) no-repeat -130px -10px;
+}
+
+.globeList>li{
+    margin: 12px 0;
+}
+
+.rgnb>ul{
+    display: flex;
+    justify-content: space-between;
+position: absolute;
+right: -14px;
+}
+
+.rgnb>ul>li{
+    margin: 0 20px;
+}
+
+
+
+
+
+
+/* subgnb */
+.subgnb{
+    position: absolute;
+    top: 10px;
+    right: -17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subgnb>li{
+    margin: 0 14px;
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+
+
+.subgnb>li:nth-child(1)::before{
+    content: '';
+        position: absolute;
+        left: 87px;
+    top: 43%;
+        margin-top: -4px;
+        width: 1px;
+        height: 10px;
+        background: #cecece;
+    }
+
+    .subgnb>li:nth-child(2)::before{
+        content: '';
+            position: absolute;
+            left: 170px;
+    top: 43%;
+            margin-top: -4px;
+            width: 1px;
+            height: 10px;
+            background: #cecece;
+        }
+
+
+
+
+        /* lnbWrap */
+
+        .lnbWrap{
+            width: 1170px;
+            height: 667px;
+            background-color: #fff;
+            border: #006ddf 1px solid;
+            position: absolute;
+    left: 0;
+    top: 125px;
+    z-index: 1002;
+    margin: 0;
+    text-align: left;
+    box-sizing: border-box;
+    display: none;
+        }
+
+        .lnbHd{
+            width: 100%;
+            height: 45px;
+            background-color: #006ddf;
+            position: absolute;
+        }
+
+        .lnbHd>h1{
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            position: absolute;
+            top: 32%;
+            left: 13px;
+        }
+
+
+        /* #sectionWrap */
+        #sectionWrap{
+            margin: 0 auto;
+            padding: 26px 0;
+            width: 1170px;
+        }
+
+/* sec1 */
+
+.sec1{
+    width: 1170px;
+    height: 377px;
+    position: relative;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+.swiper1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bic1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper1 .text{
+    position: absolute;
+    left: 87px;
+    top: 85px;
+}
+
+.swiper1 .text>h2{
+position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    left: 150px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.swiper1 .text>h1{
+    position: relative;
+    font-size: 54px;
+    font-weight: 600;
+    color: #000;
+    margin: 11px 0 20px -4px;
+    left: 150px;
+    opacity: 0;
+    transition: 1s .1s;
+}
+
+.swiper1 .text>h4{
+    position: relative;
+    font-size: 22px;
+    color: #5f626a;
+    font-weight: 600;
+    line-height: 1.26;
+    left: 150px;
+    opacity: 0;
+    transition: 1s .2s;
+
+}
+
+.swiper1 .text>p{
+    position: relative;
+    margin: 8px 0 0 0;
+    left: 150px;
+    opacity: 0;
+    transition: 1s .3s;
+}
+
+.swiper1 .text>p>a{
+    font-size: 17px;
+    color: #006ddf;
+    font-weight: 600;
+}
+
+.bic1.swiper-slide-active .text>h2{
+    left: 0;
+    opacity: 1;
+}
+.bic1.swiper-slide-active .text>h1{
+    left: 0;
+    opacity: 1;
+}
+.bic1.swiper-slide-active .text>h4{
+    left: 0;
+    opacity: 1;
+}
+.bic1.swiper-slide-active .text>p{
+    left: 0;
+    opacity: 1;
+}
+
+
+.bic2.swiper-slide-active .text>h2{
+    left: 0;
+    opacity: 1;
+}
+.bic2.swiper-slide-active .text>h1{
+    left: 0;
+    opacity: 1;
+}
+.bic2.swiper-slide-active .text>h4{
+    left: 0;
+    opacity: 1;
+}
+.bic2.swiper-slide-active .text>p{
+    left: 0;
+    opacity: 1;
+}
+
+.bic_img1{
+    position: absolute;
+    top: 38px;
+    right: -100px;
+    margin-right: 70px;
+    width: 456px;
+    height: 306px;
+    background: url(../img/ebz_dgb_sprite2023.png) no-repeat -471px -631px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.bic1.swiper-slide-active .bic_img1{
+right: 0;
+opacity: 1;
+}
+
+.bic_img2{
+    position: absolute;
+    right: -100px;
+    top: auto;
+    bottom: 0;
+    margin-right: 60px;
+    width: 540px;
+    height: 368px;
+    background: url(../img/ebz_dgb_sprite2023.png) no-repeat no-repeat -462px -231px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.bic2.swiper-slide-active .bic_img2{
+    right: 0;
+    opacity: 1;
+    }
+
+.swiperNavi{
+    height: 15px;
+    position: relative;
+    left: -491px;
+    bottom: 53px;
+    z-index: 3;
+    font-size: 0;
+    display: flex;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom,8px);
+    top: var(--swiper-pagination-top,auto);
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination-bullet{
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,7px);
+}
+
+:root {
+    --swiper-theme-color: #000;
+}
+
+
+.slideBtn{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -17%;
+    left: 54%;
+}
+
+.slideBtn>.star{
+    width: 9px;
+    height: 15px;
+    background: url(../img/ebz_dgb_sprite2023.png) no-repeat -120px 0;
+    cursor: pointer;
+}
+
+.slideBtn>.stop{
+    width: 15px;
+    height: 11px;
+    background: url(../img/ebz_dgb_sprite2023.png) no-repeat -130px 0;
+    position: absolute;
+    top: 0;
+    display: none;
+    cursor: pointer;
+
+}
+
+.slideBtn>.star.on{
+    display: none;
+}
+
+.slideBtn>.stop.on{
+    display: block;
+}
+
+    /* sec2 */
+
+    .sec2{
+        width: 1170px;
+        height: 113px;
+        border-radius: 25px;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+margin-top: 25px;
+    }
+
+    .sec2txt{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    text-align: center;
+    }
+
+    .sec2txt>li>a{
+        display: block;
+        padding: 14px 47px;
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+    }
+
+    .sec2txt>li>a:hover{
+        color: #006ddf;
+    }
+
+/* sec3 */
+.sec3{
+    width: 1170px;
+    height: 133px;
+    margin-top: 25px;
+}
+
+.sec3List{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec3List>li{
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    width: 273px;
+    height: 133px;
+}
+
+.sec3List>li>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec3List .icon1{
+    width: 61px;
+	height: 41px;
+    background: url(../img/ebz_dgb_sprite2023.png) no-repeat 0 -39px;
+}
+
+.sec3List .icon2{
+    width: 65px;
+	height: 47px;
+    background: url(../img/ebz_dgb_sprite2023.png) no-repeat -80px -40px;
+}
+
+.sec3List .icon3{
+    width: 56px;
+	height: 51px;
+    background: url(../img/ebz_dgb_sprite2023.png) no-repeat -158px -40px;
+}
+
+.sec3List .icon4{
+    width: 46px;
+	height: 50px;
+    background: url(../img/ebz_dgb_sprite2023.png) no-repeat -239px -38px;
+}
+
+.sec3List .listTxt{
+    margin-left: 8px;
+}
+
+.listTxt>strong{
+    margin: 0 0 9px 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.listTxt>p{
+    font-size: 15px;
+}
+
+.sec3List>li:hover{
+    background-color: #006ddf;
+}
+
+.sec3List>li:hover strong{
+    color: #fff;
+}
+
+.sec3List>li:hover p{
+    color: #fff;
+}
+
+
+/* sec4 */
+
+.sec4{
+    width: 1170px;
+    height: 290px;
+    margin-top: 25px;
+    display: flex;
+}
+
+.sec4>.lbox{
+    width: 687px;
+    height: 290px;
+       border-radius: 25px;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+   position: relative;
+}
+
+.sec4>.rbox{
+    width: 456px;
+    height: 290px;
+    margin-left: 24px;
+       border-radius: 25px;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+ position: relative;
+}
+
+.lbox>.title{
+    display: flex;
+    position: absolute;
+    top: 14%;
+    left: 11%;
+}
+
+.lbox>.title>li{
+    margin-right: 17px;
+}
+
+.lbox>.title>li:first-child>a{
+    font-size: 20px;
+    color: #006ddf;
+    font-weight: bold;
+}
+
+.lbox>.title>li:last-child>a{
+    font-size: 20px;
+    color: #909090;
+    font-weight: bold;
+}
+
+.lbox>.titlelist{
+    display: flex;
+    position: absolute;
+    top: 36%;
+    left: 13%;
+}
+
+.titlelist>.left{
+    float: left;
+}
+
+.titlelist>.left>li{
+list-style: circle;
+line-height: 1.9;
+}
+
+.titlelist>.left>li>a{
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+.titlelist>.right{
+    float: right;
+    position: absolute;
+    top: -5px;
+    right: -159px;
+}
+
+
+
+.titlelist>.right>li{
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.list2{
+    position: relative;
+}
+
+.list2>.right{
+    top: 4px;
+    right: -347px;
+}
+
+.titlelist.list1.active{
+display: none;
+}
+
+
+.titlelist.list2 {
+    display: none;
+    
+}
+
+.titlelist.list2.active{
+    display: block;
+}
+
+
+
+.rbox>strong{
+    margin: 0 0 26px 0;
+    font-size: 20px;
+    color: #07172a;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+}
+
+.rbox>.iconBox{
+    width: 336px;
+    height: 122px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 23%;
+    right: 13%;
+}
+
+
+
+.riconBox1>p{
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.riconBox2>p{
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.riconBox3>p{
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+.riconBox1>.ricon1{
+    width: 89px;
+	height: 89px;
+    background: url(../img/ebz_dgb_sprite2023.png)  no-repeat 0 -100px;
+}
+
+.riconBox2>.ricon2{
+    width: 89px;
+	height: 89px;
+    background: url(../img/ebz_dgb_sprite2023.png)  no-repeat -99px -100px;
+}
+
+.riconBox3>.ricon3{
+    width: 89px;
+	height: 89px;
+    background: url(../img/ebz_dgb_sprite2023.png)  no-repeat  -199px -100px;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #5f626a;
+    margin-top: 25px;
+}
+
+.footerWrap{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    margin-top: 25px;
+    position: relative;
+
+}
+
+.lfot{
+
+}
+
+
+.lfot>li:nth-child(1)>ul{
+display: flex;
+justify-content: space-between;
+}
+
+.lfot>li:nth-child(1)>ul>li{
+    margin-right: 11px;
+}
+
+.lfot>li:nth-child(1)>ul>li>a{
+    font-size: 14px;
+    color: #42464a;
+    font-weight: bold;
+}
+
+.lfot>li:nth-child(2)>ul{
+    display: flex;
+    margin-top: 15px;
+    position: relative;
+    }
+
+    .lfot>li:nth-child(3)>ul{
+        display: flex;
+        justify-content: space-between;
+        }
+
+
+.lfot>li:nth-child(2)>ul>li:nth-child(1){
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.lfot>li:nth-child(2)>ul>li:nth-child(2){
+    font-size: 17px;
+    color: #006ddf;
+    font-weight: bold;
+    margin-right: 5px;
+
+}        
+
+.lfot>li:nth-child(2)>ul>li:nth-child(3){
+    font-size: 17px;
+    color: #006ddf;
+    font-weight: bold;
+    margin-right: 5px;
+
+}        
+
+.lfot>li:nth-child(2)>ul>li:nth-child(4){
+    font-size: 17px;
+    color: #006ddf;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.lfot>li:nth-child(2)>ul>li:nth-child(5){
+    content: '';
+    position: absolute;
+    right:414px;
+    top: 50%;
+    margin: -3px 0 0 0;
+    width: 12px;
+    height: 6px;
+    background: url(../img/ebz_dgb_sprite2023.png)  no-repeat -89px 0;
+    cursor: pointer;
+}
+
+.lfot>li:nth-child(2)>ul>li:nth-child(5)>ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 59px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px 8px 0 0;
+    border: solid 1px #d1d1d1;
+    background: #fff;
+}
+
+.lfot>li:nth-child(2)>ul>li:nth-child(5)>ul>li{
+    position: relative;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 56px;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.lfot>li:nth-child(2)>ul>li:nth-child(5)>ul>li>strong{
+    margin: 0 10px 0 0;
+    font-size: 15px;
+    min-width: 86px;
+}
+
+.lfot>li:nth-child(2)>ul>li:nth-child(5)>ul>li>strong>span{
+    font-size: 17px;
+    color: #006ddf;
+}
+
+
+
+.lfot>li:nth-child(3){
+    margin: 30px 0;
+display: flex;
+position: relative;
+}
+
+.lfot>li:nth-child(3)>p{
+    color: #4d4d4d;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.lfot>li:nth-child(3)>.ficon{
+    background: url(../img/ebz_wmark_standard.png) no-repeat;
+    width: 50px;
+    height: 33px;
+    position: absolute;
+    right: 50%;
+    top: -9px;
+}
+
+
+.rfot{
+    display: flex;
+    position: absolute;
+    top: 0%; 
+    right: 0%;
+}
+
+.rfot>li{
+    margin-right: 50px;
+    
+}
+
+.rfot>li>a{
+    font-size: 13px;
+    color: #42464a;
+    font-weight: bold;
+}
+
+.selectmenu{
+    display: none;
+    position: relative;
+    padding: 0 0 34px 0;
+    min-width: 110px;
+    border: solid 1px #f3f6f8;
+    border-radius: 8px;
+}
+
+.selectmenu.active{
+    border-color: #d1d1d1;
+    background: #fff;
+}
+
+.rfot>li:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    right: 303px;
+    top: 50%;
+    margin: -3px 0 0 0;
+    width: 12px;
+    height: 6px;
+    background: url(../img/ebz_dgb_sprite2023.png)  no-repeat -89px 0;
+    cursor: pointer;
+}
+
+.rfot>li:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    right: 170px;
+    top: 50%;
+    margin: -3px 0 0 0;
+    width: 12px;
+    height: 6px;
+    background: url(../img/ebz_dgb_sprite2023.png)  no-repeat -89px 0;
+    cursor: pointer;
+
+}
+
+.rfot>li:nth-child(3)::before{
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    margin: -3px 0 0 0;
+    width: 12px;
+    height: 6px;
+    background: url(../img/ebz_dgb_sprite2023.png)  no-repeat -89px 0;
+    cursor: pointer;
+
+}
